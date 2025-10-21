@@ -130,11 +130,11 @@ source ~/.bashrc
 ## 6. Instalar e Configurar o WhatsApp Intruder
 ```bash
 # Clonar repositório
-git clone https://github.com/ALPHA-HACKGOD/WhatsAppHack.git
-cd WhatsAppHack
+git clone https://github.com/zr0n/whatsintruder.git
+cd whatsintruder
 
 # Dar permissão de execução
-chmod +x whatsapphack.sh
+chmod +x whatsintruder.sh
 
 # Verificar dependências
 ./whatsapphack.sh
@@ -142,7 +142,7 @@ chmod +x whatsapphack.sh
 ## 🚀 Como Usar
 Execução Básica
 ```bash
-cd WhatsAppHack
+cd whatsintruder
 ./whatsintruder.sh
 ```
 
