@@ -26,9 +26,12 @@ Conexão internet estável
 
 🛠 Instalação Completa
 1. Atualizar Sistema
+```
 bash
 sudo apt-get update
 sudo apt-get upgrade -y
+```
+
 2. Instalar Java 17 (OBRIGATÓRIO)
 bash
 # Instalar Java 17
