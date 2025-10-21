@@ -25,36 +25,43 @@ Requisitos Mínimos
 Conexão internet estável
 
 🛠 Instalação Completa
-1. Atualizar Sistema
-```
-bash
+## 1. Atualizar Sistema
+```bash
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-2. Instalar Java 17 (OBRIGATÓRIO)
-bash
+## 2. Instalar Java 17 (OBRIGATÓRIO)
+```bash
 # Instalar Java 17
 sudo apt install openjdk-17-jdk openjdk-17-jre -y
+```
 
 # Configurar variáveis de ambiente
+```bash
 sudo nano /etc/environment
 Adicione estas linhas ao arquivo:
+```
 
-text
+```text
 JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
 PATH="$PATH:$JAVA_HOME/bin"
-Recarregue as variáveis:
+```
 
-bash
+Recarregue as variáveis:
+```bash
 source /etc/environment
+```
 
 # Verificar instalação
+```bash
 java -version
 javac -version
 echo $JAVA_HOME
-3. Instalar Dependências do Sistema
-bash
+```
+
+## 3. Instalar Dependências do Sistema
+```bash
 # Ferramentas essenciais
 sudo apt install curl wget git unzip zip -y
 
@@ -66,9 +73,10 @@ sudo apt install apksigner -y
 
 # PHP e SSH (para servidor)
 sudo apt install php ssh-client -y
-4. Instalar Android SDK (Sem Android Studio)
-Método 1: Command Line Tools Only
-bash
+```
+## 4. Instalar Android SDK (Sem Android Studio)
+### Método 1: Command Line Tools Only
+```bash
 # Criar diretório Android
 mkdir -p ~/android-sdk
 cd ~/android-sdk
@@ -107,16 +115,19 @@ sudo ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/android-studio
 
 # Executar Android Studio para configurar SDK
 android-studio
-5. Configurar Environment do Android SDK
-bash
+```
+
+## 5. Configurar Environment do Android SDK
+```bash
 # Adicionar ao ~/.bashrc ou ~/.zshrc
 echo 'export ANDROID_SDK_ROOT="$HOME/Android/Sdk"' >> ~/.bashrc
 echo 'export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$ANDROID_SDK_ROOT/tools"' >> ~/.bashrc
 echo 'export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"' >> ~/.bashrc
 source ~/.bashrc
-6. Instalar e Configurar o WhatsApp Intruder
-bash
+```
+## 6. Instalar e Configurar o WhatsApp Intruder
+```bash
 # Clonar repositório
 git clone https://github.com/ALPHA-HACKGOD/WhatsAppHack.git
 cd WhatsAppHack
@@ -126,11 +137,14 @@ chmod +x whatsapphack.sh
 
 # Verificar dependências
 ./whatsapphack.sh
-🚀 Como Usar
+```
+## 🚀 Como Usar
 Execução Básica
-bash
+```bash
 cd WhatsAppHack
-./whatsapphack.sh
+./whatsintruder.sh
+```
+
 Fluxo de Operação:
 Build Automático: O script compila o APK automaticamente
 
