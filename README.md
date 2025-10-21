@@ -40,8 +40,9 @@ sudo apt install openjdk-17-jdk openjdk-17-jre -y
 # Configurar variáveis de ambiente
 ```bash
 sudo nano /etc/environment
-Adicione estas linhas ao arquivo:
 ```
+
+Adicione estas linhas ao arquivo:
 
 ```text
 JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
