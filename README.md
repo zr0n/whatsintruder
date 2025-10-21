@@ -1,4 +1,17 @@
-📋 Pré-requisitos
+# ⚖️ Aviso Legal
+# Este software é fornecido apenas para fins educacionais. O uso desta ferramenta para:
+
+Acessar dispositivos sem autorização
+
+Coletar dados pessoais sem consentimento
+
+Realizar atividades maliciosas
+
+É STRITAMENTE PROIBIDO e pode resultar em consequências legais severas.
+
+O desenvolvedor não se responsabiliza pelo uso indevido desta ferramenta. Use com responsabilidade e apenas em ambientes onde você tem autorização explícita.
+
+##📋 Pré-requisitos
 Sistema Operacional
 Ubuntu 20.04+ / Debian 11+ / Kali Linux
 
@@ -195,20 +208,9 @@ Comunicação via HTTP (para demonstração)
 
 Arquivos salvos com timestamp para evitar sobrescrita
 
-⚖️ Aviso Legal
-Este software é fornecido apenas para fins educacionais. O uso desta ferramenta para:
 
-Acessar dispositivos sem autorização
 
-Coletar dados pessoais sem consentimento
-
-Realizar atividades maliciosas
-
-É STRITAMENTE PROIBIDO e pode resultar em consequências legais severas.
-
-O desenvolvedor não se responsabiliza pelo uso indevido desta ferramenta. Use com responsabilidade e apenas em ambientes onde você tem autorização explícita.
-
-🔗 Links Úteis
+##🔗 Links Úteis
 Documentação Android
 
 Java JDK 17
