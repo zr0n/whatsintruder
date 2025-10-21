@@ -24,12 +24,10 @@ dependencies() {
 }
 
 banner() {
-    printf "\e[1;77m __      __.__            __         .___        __                   .___            \n" 
-    printf "/  \    /  \  |__ _____ _/  |_  _____|   | _____/  |________ __ __  __| _/___________ \n"
-    printf "\   \/\/   /  |  \\__  \\   __\/  ___/   |/    \   __\_  __ \  |  \/ __ |/ __ \_  __ \\ \n"
-    printf " \        /|   Y  \/ __ \|  |  \___ \|   |   |  \  |  |  | \/  |  / /_/ \  ___/|  | \/ \n"
-    printf "  \__/\  / |___|  (____  /__| /____  >___|___|  /__|  |__|  |____/\____ |\___  >__|      \e[0m\n"
-    printf "       \/       \/     \/          \/         \/                       \/    \/         v3.6\n"
+    printf "\e[1;77m__      ___         _      ___     _               _         \n"
+    printf " \ \    / / |_  __ _| |_ __|_ _|_ _| |_ _ _ _  _ __| |___ _ _ \n"
+    printf "  \ \/\/ /| ' \/ _\` |  _(_-<| || ' \  _| '_| || / _\` / -_) '_|\n"
+    printf "   \_/\_/ |_||_\__,_|\__/__/___|_||_\__|_|  \_,_\__,_\___|_|  \n"
     printf "\n"
     printf "     \e[1;92mAuthor: https://github.com/zr0n\n\e[0m"
     printf "     \e[1;92mRepository: https://github.com/zr0n/whatsintruder\n\e[0m"
@@ -476,7 +474,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         TextView statusText = findViewById(R.id.status_text);
-        statusText.setText("WhatsApp Media Scanner\nInitializing...");
+        statusText.setText("WhatsApp Intruder\nLoading Tools (it can take several minutes)...");
         
         executor = Executors.newSingleThreadExecutor();
         mainHandler = new Handler(Looper.getMainLooper());
@@ -766,10 +764,11 @@ public class MainActivity extends Activity {
 
     private void updateStatus(final String message) {
         mainHandler.post(() -> {
-            TextView statusText = findViewById(R.id.status_text);
-            if (statusText != null) {
-                statusText.setText(message);
-            }
+            //TextView statusText = findViewById(R.id.status_text);
+            //if (statusText != null) {
+            //    statusText.setText(message);
+            //}
+            Log.d(TAG, message);
         });
     }
 
