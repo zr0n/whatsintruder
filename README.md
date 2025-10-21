@@ -157,23 +157,12 @@ Download APK: Disponibiliza APK para download
 
 Recebe Arquivos: Arquivos são enviados para uploadedfiles/
 
-Estrutura de Arquivos
-text
-WhatsAppHack/
-├── whatsapphack.sh          # Script principal
-├── app.apk                  # APK gerado
-├── uploadedfiles/           # Arquivos recebidos
-├── app/                    # Código fonte Android
-│   ├── app/src/main/java/com/whatsapphack/
-│   └── app/src/main/res/
-├── key.keystore            # Certificado de assinatura
-└── generated_urls.txt      # URLs geradas
-🔧 Solução de Problemas
+## 🔧 Solução de Problemas
 Erro Java Version
-bash
+```bash
 # Verificar versão Java
 java -version
-
+```
 # Se não for Java 17, configurar alternativas
 sudo update-alternatives --config java
 # Selecionar Java 17
@@ -228,7 +217,7 @@ Arquivos salvos com timestamp para evitar sobrescrita
 
 
 
-##🔗 Links Úteis
+## 🔗 Links Úteis
 Documentação Android
 
 Java JDK 17
